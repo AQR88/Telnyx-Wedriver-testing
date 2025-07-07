@@ -15,9 +15,9 @@
 ![Structure](https://github.com/user-attachments/assets/5923eaf3-a444-40a5-8ee2-f11adb613db3)
 
 # Basic scripts:
-### - Run all tests: "npm run test";
-### - Run tests in Chrome: "npm run test:chrome";
-### - Run tests in Firefox: "npm run test:firefox";
-### - Generate Allure report: "npm run allure:report";
-### - Open Allure report: "npm run allure:open"; 
+ - **Run all tests:** _"npm run test"_;
+ - **Run tests in Chrome:** _"npm run test:chrome"_;
+ - **Run tests in Firefox:** _"npm run test:firefox"_;
+ - **Generate Allure report:** _"npm run allure:report"_;
+ - **Open Allure report:** _"npm run allure:open"_; 
 
