@@ -58,7 +58,13 @@ export const config = {
       maxInstances: 1,
       browserName: "chrome",
       "goog:chromeOptions": {
-        args: ["--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage"],
+        args: [
+          "--headless=new",
+          "--disable-gpu",
+          "--no-sandbox",
+          "--disable-dev-shm-usage",
+          "--window-size=1440,900",
+        ],
       },
     },
   ],
@@ -100,10 +106,10 @@ export const config = {
   //
   // Default timeout in milliseconds for request
   // if browser driver or grid doesn't send response
-  connectionRetryTimeout: 120000,
+  connectionRetryTimeout: 150000,
   //
   // Default request retries count
-  connectionRetryCount: 3,
+  connectionRetryCount: 4,
   //
   // Test runner services
   // Services take over a specific job you don't want to take care of. They enhance

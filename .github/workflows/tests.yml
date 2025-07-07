@@ -1,4 +1,4 @@
-name: WebdriverIO Tests
+name: WebdriverIO Telnyx Tests
 
 on:
   push:
@@ -23,12 +23,14 @@ jobs:
         run: npm run test:chrome
 
       - name: Generate Allure Report
+        if: always()
         run: |
           npm run allure:report
           mkdir -p public
           cp -r allure-report/* public/
 
       - name: Deploy to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
