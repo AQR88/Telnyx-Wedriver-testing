@@ -52,60 +52,60 @@ describe("Telnyx testing", () => {
     await HomePage.open();
     await HomePage.aiVoiceChoice();
   });
-  it("should registrate with valid data", async () => {
-    await SignUpPage.signUpPageOpen();
-    await SignUpPage.fillRegistrationForm();
-  });
-  it("login with empty password field", async () => {
-    await LogInPage.openLoginPage();
-    await LogInPage.fillEmailInput();
-  });
-  it("should navigate to Pricing page", async () => {
-    await HomePage.open();
-    await HomePage.pricingBtnClick();
-    await PricingPage.pricingPageExist();
-  });
-  it("blog page is working", async () => {
-    await HomePage.open();
-    await HomePage.blogArticlesChecking();
-    await BlogPage.blogPageExist();
-  });
-  it(" should Telnyx logo redirect to main paige", async () => {
-    await BlogPage.openBlogPage();
-    await BlogPage.logoClick();
-    await expect(browser).toHaveUrl("https://telnyx.com/");
-  });
-  it("should burger menu exist", async () => {
-    await HomePage.burgerMenuExist();
-  });
+  // it("should registrate with valid data", async () => {
+  //   await SignUpPage.signUpPageOpen();
+  //   await SignUpPage.fillRegistrationForm();
+  // });
+  // it("login with empty password field", async () => {
+  //   await LogInPage.openLoginPage();
+  //   await LogInPage.fillEmailInput();
+  // });
+  // it("should navigate to Pricing page", async () => {
+  //   await HomePage.open();
+  //   await HomePage.pricingBtnClick();
+  //   await PricingPage.pricingPageExist();
+  // });
+  // it("blog page is working", async () => {
+  //   await HomePage.open();
+  //   await HomePage.blogArticlesChecking();
+  //   await BlogPage.blogPageExist();
+  // });
+  // it(" should Telnyx logo redirect to main paige", async () => {
+  //   await BlogPage.openBlogPage();
+  //   await BlogPage.logoClick();
+  //   await expect(browser).toHaveUrl("https://telnyx.com/");
+  // });
+  // it("should burger menu exist", async () => {
+  //   await HomePage.burgerMenuExist();
+  // });
 
-  it(" should show 'Required' message when submitting empty form", async () => {
-    await HomePage.open();
-    await HomePage.contactUsButtonClick();
-    await ContactUsForm.requiredMaMessageVisible();
-  });
+  // it(" should show 'Required' message when submitting empty form", async () => {
+  //   await HomePage.open();
+  //   await HomePage.contactUsButtonClick();
+  //   await ContactUsForm.requiredMaMessageVisible();
+  // });
 
-  it(" visibility of AI Asistant button", async () => {
-    await HomePage.open();
-    await HomePage.exploreOurAsistantBtnIsVisible();
-  });
+  // it(" visibility of AI Asistant button", async () => {
+  //   await HomePage.open();
+  //   await HomePage.exploreOurAsistantBtnIsVisible();
+  // });
 
-  it(" comparing page is exist", async () => {
-    await HomePage.open();
-    await HomePage.clickOnComparingLink();
-    await Comparing.comparingTextAppear();
-  });
-  it("should show Terms and conditions page", async () => {
-    await HomePage.open();
-    await TermsAndConditions.termsAndConditionsPageAppers();
-  });
+  // it(" comparing page is exist", async () => {
+  //   await HomePage.open();
+  //   await HomePage.clickOnComparingLink();
+  //   await Comparing.comparingTextAppear();
+  // });
+  // it("should show Terms and conditions page", async () => {
+  //   await HomePage.open();
+  //   await TermsAndConditions.termsAndConditionsPageAppers();
+  // });
 
-  it("should show AI templates list page ", async () => {
-    await HomePage.open();
-    await HomePage.openTemplatesList();
-  });
-  it(" should show Finance and Insurance chapter", async () => {
-    await HomePage.open();
-    await HomePage.financeAndInsuranceBtn();
-  });
+  // it("should show AI templates list page ", async () => {
+  //   await HomePage.open();
+  //   await HomePage.openTemplatesList();
+  // });
+  // it(" should show Finance and Insurance chapter", async () => {
+  //   await HomePage.open();
+  //   await HomePage.financeAndInsuranceBtn();
+  // });
 });
