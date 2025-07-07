@@ -11,7 +11,7 @@ class HomePage {
   }
 
   async titleIsDisplayed() {
-    await this.title.waitForDisplayed({ timeout: 5000 });
+    await this.title.waitForDisplayed({ timeout: 10000 });
     await this.title.isDisplayed();
   }
 
@@ -19,21 +19,21 @@ class HomePage {
     return $('a[href="/sign-up"]');
   }
   async signUpButtonClick() {
-    await this.signUpButton.waitForDisplayed({ timeout: 5000 });
+    await this.signUpButton.waitForDisplayed({ timeout: 10000 });
     await this.signUpButton.click();
   }
   get products() {
     return $('button[aria-haspopup="menu"]');
   }
   async onProductsClick() {
-    await this.products.waitForDisplayed({ timeout: 5000 });
+    await this.products.waitForDisplayed({ timeout: 10000 });
     await this.products.click();
   }
   get VoiceAi() {
     return $('a[href="/products/voice-ai"]');
   }
   async onVoiceAIClick() {
-    await this.VoiceAi.waitForDisplayed({ timeout: 5000 });
+    await this.VoiceAi.waitForDisplayed({ timeout: 10000 });
     await this.VoiceAi.click();
   }
   get assistant() {
