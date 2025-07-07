@@ -19,7 +19,7 @@ describe("Telnyx testing", () => {
   //   await HomePage.signUpButtonClick();
   //   await browser.url("https://telnyx.com/sign-up");
   //   await expect(browser).toHaveUrl("https://telnyx.com/sign-up");
-  });
+  // });
   // it("should show validation message", async () => {
   //   await SignUpPage.signUpPageOpen();
   //   await SignUpPage.clickOnSignUpBtn();
