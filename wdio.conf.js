@@ -58,13 +58,7 @@ export const config = {
       maxInstances: 1,
       browserName: "chrome",
       "goog:chromeOptions": {
-        args: [
-          // "--headless=new",
-          "--disable-gpu",
-          "--no-sandbox",
-          "--disable-dev-shm-usage",
-          // "--user-data-dir=/tmp/chrome-temp-profile",
-        ],
+        args: ["--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage"],
       },
     },
   ],
