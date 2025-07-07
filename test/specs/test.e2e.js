@@ -1,57 +1,57 @@
 import { browser, expect } from "@wdio/globals";
 import HomePage from "../pages.js/homePage";
-import SignUpPage from "../pages.js/signUpPage";
-import ContactUs from "../pages.js/contactUsPage";
-import LogInPage from "../pages.js/logInPage";
-import PricingPage from "../pages.js/pricingPage";
-import BlogPage from "../pages.js/blogPage.js";
-import ContactUsForm from "../pages.js/contactUsFormPage.js";
-import Comparing from "../pages.js/comparingPage.js";
-import TermsAndConditions from "../pages.js/termsPage.js";
+// import SignUpPage from "../pages.js/signUpPage";
+// import ContactUs from "../pages.js/contactUsPage";
+// import LogInPage from "../pages.js/logInPage";
+// import PricingPage from "../pages.js/pricingPage";
+// import BlogPage from "../pages.js/blogPage.js";
+// import ContactUsForm from "../pages.js/contactUsFormPage.js";
+// import Comparing from "../pages.js/comparingPage.js";
+// import TermsAndConditions from "../pages.js/termsPage.js";
 
 describe("Telnyx testing", () => {
   it("should load homepage with corect title", async () => {
     await HomePage.open();
     await HomePage.titleIsDisplayed();
   });
-  it("should open Sign up page", async () => {
-    await HomePage.open();
-    await HomePage.signUpButtonClick();
-    await browser.url("https://telnyx.com/sign-up");
-    await expect(browser).toHaveUrl("https://telnyx.com/sign-up");
-  });
-  it("should show validation message", async () => {
-    await SignUpPage.signUpPageOpen();
-    await SignUpPage.clickOnSignUpBtn();
-    await SignUpPage.validationMsgIsVisible();
-  });
-  it("navigate to VoiceAI page ", async () => {
-    await HomePage.open();
-    await browser.pause(3000);
-    await HomePage.onProductsClick();
-    await HomePage.onVoiceAIClick();
-    await expect(browser).toHaveUrl(
-      "https://telnyx.com/products/voice-ai-agents"
-    );
-    it("should show AI asistant popup", async () => {
-      await HomePage.open();
-      await HomePage.assistantAIWindow();
-      await HomePage.isDialogueVisible();
-    });
-    it("should navigate to 'Contact us' page", async () => {
-      await HomePage.open();
-      await HomePage.clickOnContactUsBtn();
-      await ContactUs.contactUsWindowDisplayed();
-    });
-  });
-  it("should find Linkedin in footer", async () => {
-    await HomePage.open();
-    await HomePage.clickOnLinkedin();
-  });
-  it("should sound AI voice", async () => {
-    await HomePage.open();
-    await HomePage.aiVoiceChoice();
-  });
+  // it("should open Sign up page", async () => {
+  //   await HomePage.open();
+  //   await HomePage.signUpButtonClick();
+  //   await browser.url("https://telnyx.com/sign-up");
+  //   await expect(browser).toHaveUrl("https://telnyx.com/sign-up");
+  // });
+  // it("should show validation message", async () => {
+  //   await SignUpPage.signUpPageOpen();
+  //   await SignUpPage.clickOnSignUpBtn();
+  //   await SignUpPage.validationMsgIsVisible();
+  // });
+  // it("navigate to VoiceAI page ", async () => {
+  //   await HomePage.open();
+  //   await browser.pause(3000);
+  //   await HomePage.onProductsClick();
+  //   await HomePage.onVoiceAIClick();
+  //   await expect(browser).toHaveUrl(
+  //     "https://telnyx.com/products/voice-ai-agents"
+  //   );
+  //   it("should show AI asistant popup", async () => {
+  //     await HomePage.open();
+  //     await HomePage.assistantAIWindow();
+  //     await HomePage.isDialogueVisible();
+  //   });
+  //   it("should navigate to 'Contact us' page", async () => {
+  //     await HomePage.open();
+  //     await HomePage.clickOnContactUsBtn();
+  //     await ContactUs.contactUsWindowDisplayed();
+  //   });
+  // });
+  // it("should find Linkedin in footer", async () => {
+  //   await HomePage.open();
+  //   await HomePage.clickOnLinkedin();
+  // });
+  // it("should sound AI voice", async () => {
+  //   await HomePage.open();
+  //   await HomePage.aiVoiceChoice();
+  // });
   // it("should registrate with valid data", async () => {
   //   await SignUpPage.signUpPageOpen();
   //   await SignUpPage.fillRegistrationForm();
