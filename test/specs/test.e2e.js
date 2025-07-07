@@ -1,6 +1,6 @@
 import { browser, expect } from "@wdio/globals";
 import HomePage from "../pages.js/homePage";
-// import SignUpPage from "../pages.js/signUpPage";
+import SignUpPage from "../pages.js/signUpPage";
 // import ContactUs from "../pages.js/contactUsPage";
 // import LogInPage from "../pages.js/logInPage";
 // import PricingPage from "../pages.js/pricingPage";
