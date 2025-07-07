@@ -59,11 +59,11 @@ export const config = {
       browserName: "chrome",
       "goog:chromeOptions": {
         args: [
-          "--headless=new",
+          // "--headless=new",
           "--disable-gpu",
           "--no-sandbox",
           "--disable-dev-shm-usage",
-          "--user-data-dir=/tmp/chrome-temp-profile",
+          // "--user-data-dir=/tmp/chrome-temp-profile",
         ],
       },
     },

@@ -16,9 +16,10 @@ class HomePage {
   }
 
   get signUpButton() {
-    return $('a[href="/sign-up"]');
+    return $('[data-content="Sign up"]');
   }
   async signUpButtonClick() {
+    await browser.setWindowSize(1440, 900);
     await this.signUpButton.waitForDisplayed({ timeout: 10000 });
     await this.signUpButton.click();
   }

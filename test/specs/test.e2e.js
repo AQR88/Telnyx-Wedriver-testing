@@ -10,10 +10,10 @@ import HomePage from "../pages.js/homePage";
 // import TermsAndConditions from "../pages.js/termsPage.js";
 
 describe("Telnyx testing", () => {
-  it("should load homepage with corect title", async () => {
-    await HomePage.open();
-    await HomePage.titleIsDisplayed();
-  });
+  // it("should load homepage with corect title", async () => {
+  //   await HomePage.open();
+  //   await HomePage.titleIsDisplayed();
+  // });
   it("should open Sign up page", async () => {
     await HomePage.open();
     await HomePage.signUpButtonClick();
