@@ -12,10 +12,11 @@
     "cross-env": "^7.0.3"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js",
-    "chrome": "cross-env BROWSER=chrome wdio wdio.chrome.conf.js",
-    "firefox": "cross-env BROWSER=firefox wdio wdio.firefox.conf.js",
-    "allure:generate": "allure generate allure-results --clean -o allure-report",
-    "allure:open": "allure open allure-report"
+    "test": "wdio run wdio.conf.js",
+    "test:chrome": "wdio run wdio.chrome.conf.js",
+    "test:firefox": "wdio run wdio.firefox.conf.js",
+    "test:edge": "wdio run wdio.edge.conf.js",
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "report:open": "allure open allure-report"
   }
 }
