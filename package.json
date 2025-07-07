@@ -15,7 +15,6 @@
     "test": "wdio run wdio.conf.js",
     "test:chrome": "wdio run wdio.chrome.conf.js",
     "test:firefox": "wdio run wdio.firefox.conf.js",
-    "test:edge": "wdio run wdio.edge.conf.js",
     "report:generate": "allure generate allure-results --clean -o allure-report",
     "report:open": "allure open allure-report"
   }
