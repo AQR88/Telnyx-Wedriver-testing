@@ -1,5 +1,20 @@
-import { config as base } from "./wdio.conf.js";
+import { config as baseConfig } from "./wdio.base.conf.js";
+
 export const config = {
-  ...base,
-  capabilities: [{ browserName: "chrome" }],
+  ...baseConfig,
+  capabilities: [
+    {
+      browserName: "chrome",
+      maxInstances: 1,
+      "goog:chromeOptions": {
+        args: [
+          "--headless=new",
+          "--disable-gpu",
+          "--no-sandbox",
+          "--disable-dev-shm-usage",
+          "--user-data-dir=/tmp/chrome-temp-profile",
+        ],
+      },
+    },
+  ],
 };
