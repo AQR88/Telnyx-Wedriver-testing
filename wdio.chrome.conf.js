@@ -1,4 +1,4 @@
-import { config as baseConfig } from "./wdio.conf";
+import { config as baseConfig } from "../Telnyx-Wedriver-testing/wdio.conf.js";
 
 export const config = {
   ...baseConfig,
