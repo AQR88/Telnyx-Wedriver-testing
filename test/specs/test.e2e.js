@@ -14,12 +14,12 @@ describe("Telnyx testing", () => {
     await HomePage.open();
     await HomePage.titleIsDisplayed();
   });
-  // it("should open Sign up page", async () => {
-  //   await HomePage.open();
-  //   await HomePage.signUpButtonClick();
-  //   await browser.url("https://telnyx.com/sign-up");
-  //   await expect(browser).toHaveUrl("https://telnyx.com/sign-up");
-  // });
+  it("should open Sign up page", async () => {
+    await HomePage.open();
+    await HomePage.signUpButtonClick();
+    await browser.url("https://telnyx.com/sign-up");
+    await expect(browser).toHaveUrl("https://telnyx.com/sign-up");
+  });
   // it("should show validation message", async () => {
   //   await SignUpPage.signUpPageOpen();
   //   await SignUpPage.clickOnSignUpBtn();
