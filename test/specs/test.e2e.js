@@ -20,11 +20,11 @@ describe("Telnyx testing", () => {
   //   await browser.url("https://telnyx.com/sign-up");
   //   await expect(browser).toHaveUrl("https://telnyx.com/sign-up");
   // });
-  // it("should show validation message", async () => {
-  //   await SignUpPage.signUpPageOpen();
-  //   await SignUpPage.clickOnSignUpBtn();
-  //   await SignUpPage.validationMsgIsVisible();
-  // });
+  it("should show validation message", async () => {
+    await SignUpPage.signUpPageOpen();
+    await SignUpPage.clickOnSignUpBtn();
+    await SignUpPage.validationMsgIsVisible();
+  });
   // it("navigate to VoiceAI page ", async () => {
   //   await HomePage.open();
   //   await browser.pause(3000);
