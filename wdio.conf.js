@@ -47,10 +47,27 @@ export const config = {
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://saucelabs.com/platform/platform-configurator
   //
+  // capabilities: [
+  //   {
+  //     // capabilities for local browser web tests
+  //     browserName: "chrome", // or "firefox", "microsoftedge", "safari"
+  //   },
+  // ],
   capabilities: [
     {
-      // capabilities for local browser web tests
-      browserName: "chrome", // or "firefox", "microsoftedge", "safari"
+      browserName: "chrome",
+      "goog:chromeOptions": {
+        args: [
+          "--headless=new",
+          "--disable-gpu",
+          "--no-sandbox",
+          "--disable-dev-shm-usage",
+          "--disable-extensions",
+          "--disable-infobars",
+          "--window-size=1920,1080",
+          `--user-data-dir=/tmp/chrome-profile-${Date.now()}`,
+        ],
+      },
     },
   ],
 
