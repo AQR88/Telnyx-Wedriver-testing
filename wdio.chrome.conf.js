@@ -2,6 +2,7 @@ import { config as baseConfig } from "../Telnyx-Wedriver-testing/wdio.conf.js";
 
 export const config = {
   ...baseConfig,
+
   capabilities: [
     {
       browserName: "chrome",

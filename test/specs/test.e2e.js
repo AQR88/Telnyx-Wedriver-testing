@@ -1,4 +1,4 @@
-// import { browser, expect } from "@wdio/globals";
+import { browser, expect } from "@wdio/globals";
 import HomePage from "../pages.js/homePage";
 import SignUpPage from "../pages.js/signUpPage";
 import ContactUs from "../pages.js/contactUsPage";
@@ -17,8 +17,11 @@ describe("Telnyx testing", () => {
   it("should open Sign up page", async () => {
     await HomePage.open();
     await HomePage.signUpButtonClick();
-    await browser.url("https://telnyx.com/sign-up");
     await expect(browser).toHaveUrl("https://telnyx.com/sign-up");
+  });
+  it("should registrate with valid data", async () => {
+    await SignUpPage.signUpPageOpen();
+    await SignUpPage.fillRegistrationForm();
   });
   it("should show validation message", async () => {
     await SignUpPage.signUpPageOpen();
@@ -52,10 +55,7 @@ describe("Telnyx testing", () => {
     await HomePage.open();
     await HomePage.aiVoiceChoice();
   });
-  it("should registrate with valid data", async () => {
-    await SignUpPage.signUpPageOpen();
-    await SignUpPage.fillRegistrationForm();
-  });
+
   it("login with empty password field", async () => {
     await LogInPage.openLoginPage();
     await LogInPage.fillEmailInput();

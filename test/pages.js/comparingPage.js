@@ -5,7 +5,7 @@ class Comparing {
   }
 
   async comparingTextAppear() {
-    await this.h2Title.scrollIntoViewk();
+    await this.h2Title.scrollIntoView();
     await this.h2Title.isDisplayed();
   }
 }
