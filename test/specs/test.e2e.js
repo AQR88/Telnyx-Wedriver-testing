@@ -33,16 +33,16 @@ describe("Telnyx testing", () => {
     await expect(browser).toHaveUrl(
       "https://telnyx.com/products/voice-ai-agents"
     );
-    it("should show AI asistant popup", async () => {
-      await HomePage.open();
-      await HomePage.assistantAIWindow();
-      await HomePage.isDialogueVisible();
-    });
-    it("should navigate to 'Contact us' page", async () => {
-      await HomePage.open();
-      await HomePage.clickOnContactUsBtn();
-      await ContactUs.contactUsWindowDisplayed();
-    });
+  });
+  it("should show AI asistant popup", async () => {
+    await HomePage.open();
+    await HomePage.assistantAIWindow();
+    await HomePage.isDialogueVisible();
+  });
+  it("should navigate to 'Contact us' page", async () => {
+    await HomePage.open();
+    await HomePage.clickOnContactUsBtn();
+    await ContactUs.contactUsWindowDisplayed();
   });
   it("should find Linkedin in footer", async () => {
     await HomePage.open();
